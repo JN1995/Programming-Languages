@@ -17,38 +17,35 @@ greeting()
 
 name = "Robert"
 
-def greeting(name):
+def greeting(name = "Chris"):
     
     def hello():
         print("Hi "+ name)
     hello()
-
-if __name__ == "__main__":
-    pass
-
-    greeting('ch')
-
-# # 3) Global variable
-
-# name = "Robert"
-
-# def greeting():
-#     def hello():
-#         print("Hi "+ name)
-#     hello()
     
-# greeting()
+greeting()
 
-# # Use of the Keyword "Global"
+# 3) Global variable
 
-# x = 200
+name = "Robert"
 
-# def my_function():
-#     global x
-#     x = 100
-#     print("The value of x is {} ".format(x))
+def greeting():
+    def hello():
+        print("Hi "+ name)
+    hello()
     
-# print(x)
-# my_function()
-# print(x)
+greeting()
+
+# Use of the Keyword "Global"
+
+x = 200
+
+def my_function():
+    global x
+    x = 100
+    print("The value of x is {} ".format(x))
+    
+print(x)
+my_function()
+print(x)
 
